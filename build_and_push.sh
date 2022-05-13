@@ -2,7 +2,7 @@
 
 cd $(dirname $0)
 
-version=1.28.1
+version=1.29.0
 
 arch=$(uname -m)
 if [ $arch = 'x86_64' ]; then

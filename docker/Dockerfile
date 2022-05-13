@@ -38,6 +38,8 @@ RUN echo "/usr/local/ssl/lib" > /etc/ld.so.conf.d/0-openssl-1.1.1k.conf \
   && apt-get update && apt-get install -y --no-install-recommends \
   libxml2 \
   clang \
+  lld \
   curl \
   && rm -rf /var/lib/apt/*
 
+RUN ln -sf lld /usr/bin/ld

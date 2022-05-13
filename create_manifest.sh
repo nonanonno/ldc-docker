@@ -1,6 +1,6 @@
 #/bin/bash
 
-version=1.28.1
+version=1.29.0
 
 docker manifest create nonanonno/ldc:${version} \
     nonanonno/ldc:${version}-arm64 \
